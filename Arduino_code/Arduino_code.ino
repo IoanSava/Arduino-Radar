@@ -17,27 +17,27 @@ void setup() {
 
 void loop(){
   // Rotates the servo motor from 15 to 165 degrees
-  for(int i = 15; i < 165; ++i){  
-  myServo.write(i);
-  delay(30);
-  distance = calculate_distance(); // Calls a function for calculating the
-  // distance measured by the Ultrasonic sensor for each degree
+  for (int i = 15; i < 165; ++i){  
+     myServo.write(i);
+     delay(30);
+     distance = calculate_distance(); // Calls a function for calculating the
+     // distance measured by the Ultrasonic sensor for each degree
   
-  Serial.print(i); // Sends the current degree into the Serial Port
-  Serial.print(","); 
-  Serial.print(distance); // Sends the distance value into the Serial Port
-  Serial.print(".");
+     Serial.print(i); // Sends the current degree into the Serial Port
+     Serial.print(","); 
+     Serial.print(distance); // Sends the distance value into the Serial Port
+     Serial.print(".");
   }
   
   // Repeats the previous lines from 165 to 15 degrees
-  for(int i = 165; i > 15; --i){  
-  myServo.write(i);
-  delay(30);
-  distance = calculate_distance();
-  Serial.print(i);
-  Serial.print(",");
-  Serial.print(distance);
-  Serial.print(".");
+  for (int i = 165; i > 15; --i){  
+     myServo.write(i);
+     delay(30);
+     distance = calculate_distance();
+     Serial.print(i);
+     Serial.print(",");
+     Serial.print(distance);
+     Serial.print(".");
   }
 }
 
