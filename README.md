@@ -1,7 +1,7 @@
 # Arduino-Radar
-Cool looking radar using the Arduino Board and the Processing Development Environment.
+Cool looking radar using Arduino Board and Processing Development Environment.
 
-Components needed for this Arduino Project
+You need the following components:
 
 Ultrasonic Sensor HC-SR04
 
